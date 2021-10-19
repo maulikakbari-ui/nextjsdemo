@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import dealdaybg from "/data";
-import styles from "../dealday/DealDay.module.css";
+import styles from "../Dealday/DealDay.module.css";
 
 function DealDay() {
   return (

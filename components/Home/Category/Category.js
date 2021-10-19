@@ -3,7 +3,7 @@ import category from "/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Navigation } from "swiper";
 SwiperCore.use([Pagination, Navigation]);
-import styles from "../category/Category.module.css";
+import styles from "../Category/Category.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
