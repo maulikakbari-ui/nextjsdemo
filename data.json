@@ -1,0 +1,236 @@
+{
+  "mainSlider": [
+    {
+      "id": 1,
+      "mainSliderImgUrl": "/html/vegist-final/vegist/image/slider13.jpg",
+      "title": "Farmfood freshbox",
+      "textSlider": "Fresh & healthy",
+      "link": "Shop now"
+    },
+    {
+      "id": 2,
+      "mainSliderImgUrl": "/html/vegist-final/vegist/image/slider12.jpg",
+      "title": "Pure and organic",
+      "textSlider": "Honey flat 20% off",
+      "link": "Shop now"
+    },
+    {
+      "id": 3,
+      "mainSliderImgUrl": "/html/vegist-final/vegist/image/slider11.jpg",
+      "title": "Always fresh beans",
+      "textSlider": "Best collections",
+      "link": "Shop now"
+    },
+    {
+      "id": 4,
+      "mainSliderImgUrl": "/html/vegist-final/vegist/image/slider11.jpg",
+      "title": "Always fresh beans",
+      "textSlider": "Best collections",
+      "link": "Shop now"
+    }
+  ],
+  "gridBanner": [
+    {
+      "id": 1,
+      "gridBannerImgUrl": "/html/vegist-final/vegist/image/banner20.jpg",
+      "gridText": "Organic juice",
+      "title": "Feel the freshness",
+      "link": "Shop now"
+    },
+    {
+      "id": 2,
+      "gridBannerImgUrl": "/html/vegist-final/vegist/image/banner21.jpg",
+      "gridText": "Fresh food",
+      "title": "Eggplant fresh meat",
+      "link": "Shop now"
+    },
+    {
+      "id": 3,
+      "gridBannerImgUrl": "/html/vegist-final/vegist/image/banner22.jpg",
+      "gridText": "Organic plant",
+      "title": "Freshness is on focus",
+      "link": "Shop now"
+    }
+  ],
+  "categoryItem": [
+    {
+      "id": 1,
+      "categoryImgUrl": "/html/vegist-final/vegist/image/category-image/home-5/image1.jpg",
+      "title": "Green seafood",
+      "item": "20"
+    },
+    {
+      "id": 2,
+      "categoryImgUrl": "/html/vegist-final/vegist/image/category-image/home-5/image2.jpg",
+      "title": "Green seafood",
+      "item": "10"
+    },
+    {
+      "id": 3,
+      "categoryImgUrl": "/html/vegist-final/vegist/image/category-image/home-5/image3.jpg",
+      "title": "Green seafood",
+      "item": "5"
+    },
+    {
+      "id": 4,
+      "categoryImgUrl": "/html/vegist-final/vegist/image/category-image/home-5/image4.jpg",
+      "title": "Green seafood",
+      "item": "80"
+    },
+    {
+      "id": 5,
+      "categoryImgUrl": "/html/vegist-final/vegist/image/category-image/home-5/image5.jpg",
+      "title": "Green seafood",
+      "item": "21"
+    }
+  ],
+  "DealDayBg": [
+    {
+      "dealDayImgUrl": "/html/vegist-final/vegist/image/dealbanner3.jpg"
+    }
+  ],
+  "featuredproducts": [
+    {
+      "id": 1,
+      "featuredImgFront": "/html/vegist-final/vegist/image/pro/pro-img-1.jpg",
+      "featuredImgBack": "/html/vegist-final/vegist/image/pro/pro-img-01.jpg",
+      "lableNew": "New",
+      "discount": "-12%",
+      "title": "Fresh organic fruit (50gm)",
+      "price": "130.00 USD"
+    },
+    {
+      "id": 2,
+      "featuredImgFront": "/html/vegist-final/vegist/image/pro/pro-img-2.jpg",
+      "featuredImgBack": "/html/vegist-final/vegist/image/pro/pro-img-02.jpg",
+      "discount": "-20%",
+      "title": "Fresh & healty food",
+      "price": "130.00 USD"
+    },
+    {
+      "id": 3,
+      "featuredImgFront": "/html/vegist-final/vegist/image/pro/pro-img-3.jpg",
+      "featuredImgBack": "/html/vegist-final/vegist/image/pro/pro-img-03.jpg",
+      "lableNew": "New",
+      "title": "Fresh apple",
+      "price": "130.00 USD"
+    },
+    {
+      "id": 4,
+      "featuredImgFront": "/html/vegist-final/vegist/image/pro/pro-img-4.jpg",
+      "featuredImgBack": "/html/vegist-final/vegist/image/pro/pro-img-04.jpg",
+      "lableNew": "New",
+      "title": "Fresh organic fruit (50gm)",
+      "price": "130.00 USD"
+    },
+    {
+      "id": 5,
+      "featuredImgFront": "/html/vegist-final/vegist/image/pro/pro-img-5.jpg",
+      "featuredImgBack": "/html/vegist-final/vegist/image/pro/pro-img-05.jpg",
+      "lableNew": "New",
+      "title": "Fresh organic fruit (50gm)",
+      "price": "130.00 USD"
+    },
+    {
+      "id": 6,
+      "featuredImgFront": "/html/vegist-final/vegist/image/pro/pro-img-6.jpg",
+      "featuredImgBack": "/html/vegist-final/vegist/image/pro/pro-img-06.jpg",
+      "lableNew": "New",
+      "title": "Fresh organic fruit (50gm)",
+      "price": "130.00 USD"
+    },
+    {
+      "id": 7,
+      "featuredImgFront": "/html/vegist-final/vegist/image/pro/pro-img-7.jpg",
+      "featuredImgBack": "/html/vegist-final/vegist/image/pro/pro-img-07.jpg",
+      "lableNew": "New",
+      "title": "Fresh organic fruit (50gm)",
+      "price": "130.00 USD"
+    },
+    {
+      "id": 8,
+      "featuredImgFront": "/html/vegist-final/vegist/image/pro/pro-img-8.jpg",
+      "featuredImgBack": "/html/vegist-final/vegist/image/pro/pro-img-08.jpg",
+      "lableNew": "New",
+      "title": "Fresh organic fruit (50gm)",
+      "price": "130.00 USD"
+    }
+  ],
+  "recentnews": [
+    {
+      "id": 1,
+      "blogImgUrl": "/html/vegist-final/vegist/image/blog-image/home-5/image1.jpg",
+      "newsdate": "Jan 8, 2021",
+      "comment": "2",
+      "newstitle": "Green onion knife and salad plased",
+      "newsdescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit doli. Aenean commodo ligula eget dolor...",
+      "newsLink": "Read more",
+      "newsadmin": "Andrew louise"
+    },
+    {
+      "id": 2,
+      "blogImgUrl": "/html/vegist-final/vegist/image/blog-image/home-5/image2.jpg",
+      "newsdate": "Jan 8, 2021",
+      "comment": "2",
+      "newstitle": "Green onion knife and salad plased",
+      "newsdescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit doli. Aenean commodo ligula eget dolor...",
+      "newsLink": "Read more",
+      "newsadmin": "Andrew louise"
+    },
+    {
+      "id": 3,
+      "blogImgUrl": "/html/vegist-final/vegist/image/blog-image/home-5/image3.jpg",
+      "newsdate": "Jan 12, 2021",
+      "comment": "2",
+      "newstitle": "Green onion knife and salad plased",
+      "newsdescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit doli. Aenean commodo ligula eget dolor...",
+      "newsLink": "Read more",
+      "newsadmin": "Andrew louise"
+    },
+    {
+      "id": 4,
+      "blogImgUrl": "/html/vegist-final/vegist/image/blog-image/home-5/image4.jpg",
+      "newsdate": "Jan 15, 2021",
+      "comment": "2",
+      "newstitle": "Green onion knife and salad plased",
+      "newsdescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit doli. Aenean commodo ligula eget dolor...",
+      "newsLink": "Read more",
+      "newsadmin": "Andrew louise"
+    },
+    {
+      "id": 5,
+      "blogImgUrl": "/html/vegist-final/vegist/image/blog-image/home-5/image5.jpg",
+      "newsdate": "Jan 16, 2021",
+      "comment": "2",
+      "newstitle": "Green onion knife and salad plased",
+      "newsdescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit doli. Aenean commodo ligula eget dolor...",
+      "newsLink": "Read more",
+      "newsadmin": "Andrew louise"
+    },
+    {
+      "id": 6,
+      "blogImgUrl": "/html/vegist-final/vegist/image/blog-image/home-5/image6.jpg",
+      "newsdate": "Jan 19, 2021",
+      "comment": "2",
+      "newstitle": "Green onion knife and salad plased",
+      "newsdescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit doli. Aenean commodo ligula eget dolor...",
+      "newsLink": "Read more",
+      "newsadmin": "Andrew louise"
+    },
+    {
+      "id": 7,
+      "blogImgUrl": "/html/vegist-final/vegist/image/blog-image/home-5/image7.jpg",
+      "newsdate": "Jan 28, 2021",
+      "comment": "2",
+      "newstitle": "Green onion knife and salad plased",
+      "newsdescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit doli. Aenean commodo ligula eget dolor...",
+      "newsLink": "Read more",
+      "newsadmin": "Andrew louise"
+    }
+  ],
+  "footerBg": [
+    {
+      "footerImgUrl": "/html/vegist-final/vegist/image/footer-5.jpg"
+    }
+  ]
+}

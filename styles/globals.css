@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
 a {
@@ -13,4 +14,100 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  line-height: normal;
+}
+p {
+  margin: 0px;
+  font-size: 14px;
+}
+ul,
+li,
+ol {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.header-main-area .navbar {
+  padding: 25px 0px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+  color: #fff;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #f5ab1e;
+  position: absolute;
+  bottom: 50%;
+  z-index: 2;
+  color: #fff;
+  width: 35px !important;
+  height: 35px !important;
+  font-size: 20px;
+  border-radius: 3px;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #222;
+}
+.category {
+  padding-top: 60px !important;
+  margin-top: -60px;
+}
+.category div.swiper-button-prev {
+  position: absolute;
+  top: 23px;
+  right: 45px;
+  left: auto;
+}
+.category div.swiper-button-next {
+  top: 23px;
+  right: 5px;
+}
+.productSliderin {
+  padding-top: 60px !important;
+  margin-top: -60px;
+}
+.productSliderin div.swiper-button-prev {
+  position: absolute;
+  top: 23px;
+  right: 45px;
+  left: auto;
+}
+.productSliderin div.swiper-button-next {
+  top: 23px;
+  right: 5px;
+}
+.recentSliderin {
+  padding-top: 60px !important;
+  margin-top: -60px;
+}
+.recentSliderin div.swiper-button-prev {
+  position: absolute;
+  top: 23px;
+  right: 45px;
+  left: auto;
+}
+.recentSliderin div.swiper-button-next {
+  top: 23px;
+  right: 5px;
+}
+.f-link-ul {
+  margin-top: 25px;
+}
+.f-link-ul.collapse:not(.show) {
+  display: block;
 }

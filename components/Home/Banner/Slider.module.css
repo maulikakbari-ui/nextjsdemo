@@ -1,0 +1,36 @@
+.hscontent {
+  position: absolute;
+  bottom: 50%;
+  left: 20%;
+  transform: translateY(50%);
+  width: 35%;
+}
+.hscontent h1 {
+  color: #222;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+.hscontent h3 {
+  font-size: 32px;
+  margin-top: 26px;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+.hscontent a {
+  color: #222;
+  margin-top: 28px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #f5ab1e;
+  font-weight: 500;
+  display: inline-block;
+}
+.homeslider {
+  position: relative;
+}
+.imgback {
+  width: 1903px;
+  height: 790px;
+}

@@ -1,0 +1,88 @@
+.dealdaymain {
+  position: relative;
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dealarea {
+  max-width: 427px;
+  text-align: center;
+}
+.dealcontent {
+  position: relative;
+  z-index: 1;
+}
+.dealcontent h2 {
+  color: #333;
+  font-size: 22px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dealcontent h2 span {
+  background-color: #f5ab1e;
+  color: #fff;
+  font-size: 13px;
+  padding: 2px 5px 2px 15px;
+  font-weight: 400;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%);
+}
+.dealcontent span {
+  color: #333;
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: 400;
+  display: block;
+}
+.contdown_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 31px;
+}
+.contdown_row li {
+  position: relative;
+  margin-right: 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contdown_row li:last-child {
+  margin-right: 0px;
+}
+.contdown_row li span {
+  color: #333;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+}
+.contdown_row li span.countdown_title {
+  color: #333;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.contdown_row li::after {
+  content: ":";
+  position: absolute;
+  right: -22px;
+  bottom: 50%;
+  transform: translateY(50%);
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+}
+.contdown_row li:last-child::after {
+  display: none;
+}

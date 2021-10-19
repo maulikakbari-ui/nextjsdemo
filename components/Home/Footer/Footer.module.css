@@ -1,0 +1,112 @@
+.footerMain {
+  padding: 80px 0px;
+  position: relative;
+}
+.footerbg {
+  position: relative;
+  z-index: 0;
+}
+.newsletter {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.newscontent {
+  margin-bottom: 24px;
+}
+.newscontent h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  color: #222222;
+}
+.newscontent span {
+  margin-top: 7px;
+  font-size: 14px;
+  display: inline-block;
+}
+.footerMainin {
+  display: flex;
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 1px solid #e2e2e2;
+}
+.flogo {
+  width: 25%;
+}
+.footerlogo a {
+  font-size: 28px;
+  font-weight: 600;
+}
+.footerbottom {
+  width: 75%;
+}
+.footercontact {
+  margin-top: 16px;
+}
+.fulliul {
+  display: flex;
+  align-items: center;
+}
+.fulliul li svg {
+  width: 22px;
+  height: 22px;
+  color: #f5ab1e;
+}
+.footerinfo {
+  margin-left: 20px;
+}
+.footerinfo a {
+  margin-top: 5px;
+  display: block;
+}
+.footerinfo a:first-child {
+  margin-top: 0px;
+}
+.footermap {
+  margin-top: 9px;
+}
+.footerinfo span {
+  margin-top: 5px;
+  display: block;
+}
+.footerinfo span:first-child {
+  margin-top: 0px;
+}
+.footerul li {
+  display: block;
+}
+.footerlink {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.flink {
+  width: calc(25% - 30px);
+  margin-left: 30px;
+}
+.hfooter {
+  display: none;
+}
+.flink h2 {
+  color: #f5ab1e;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+}
+.flinkul {
+  display: block;
+  margin-top: 25px;
+}
+.collapse:not(.show) {
+  display: block;
+  margin-top: 25px;
+}
+.flink ul li {
+  padding-top: 16px;
+  line-height: 1;
+}
+.flink ul li:last-child {
+  margin-top: 0px;
+}

@@ -1,0 +1,64 @@
+.recentNewsmain {
+  padding-bottom: 80px;
+}
+.sectiontitle {
+  display: inline-block;
+  position: relative;
+  z-index: 9;
+}
+.sectiontitle h2 {
+  font-size: 22px;
+  margin-bottom: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+.newsBox {
+  position: relative;
+}
+.newsImg {
+  min-height: 274px;
+  position: relative;
+}
+.newsdatecomment {
+  background-color: #f5ab1e;
+  color: #fff;
+  padding: 7px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.newsdate svg {
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+}
+.newstitle h4 {
+  font-size: 16px;
+  margin-top: 23px;
+}
+.newsdescription {
+  margin-top: 16px;
+}
+.morenews {
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.readlink {
+  color: #f5ab1e;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.readlink svg {
+  width: 25px;
+  height: 25px;
+}
+
+.newsadmin {
+  display: inline-block;
+}
+.newseditor {
+  font-weight: 600;
+}

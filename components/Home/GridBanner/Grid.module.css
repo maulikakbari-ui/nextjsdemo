@@ -1,0 +1,90 @@
+.homegridbanner {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.organicfoodfreshbanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.offerbanner {
+  position: relative;
+  width: 33.33%;
+  margin-right: 30px;
+}
+.bannerhover {
+  position: relative;
+  display: block;
+  min-height: 227px;
+  width: 100%;
+}
+.bannerhover img {
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.bannerhover::before,
+.bannerhover::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  z-index: 9;
+  opacity: 0;
+  -webkit-transform: scale(1, 0);
+  -o-transform: scale(1, 0);
+  transform: scale(1, 0);
+}
+.offerbanner .bannerhover::before {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+.offerbanner .bannerhover::after {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.offerbanner:hover .bannerhover::before,
+.offerbanner:hover .bannerhover::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.offerbanner:hover .bannerhover img {
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.organicfoodfreshbanner .offerbanner:last-child {
+  margin-right: 0px;
+}
+.bannercontent {
+  position: absolute;
+  bottom: 50%;
+  right: 20px;
+  transform: translateY(50%);
+  width: 30%;
+  z-index: 3;
+}
+.bannercontent span {
+  color: #999;
+  line-height: 1;
+  font-weight: 400;
+}
+.bannercontent h2 {
+  color: #333;
+  margin-top: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.bannercontent a {
+  color: #f5ab1e !important;
+  margin-top: 8px;
+  font-weight: 700;
+  display: block;
+}

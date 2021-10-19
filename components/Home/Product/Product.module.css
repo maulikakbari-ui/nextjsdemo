@@ -1,0 +1,107 @@
+.productslidermain {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.productSliderin {
+  position: relative;
+}
+.productSliderin div.swiper-button-prev {
+  position: absolute;
+}
+.sectiontitle {
+  display: inline-block;
+  position: relative;
+  z-index: 9;
+}
+.sectiontitle h2 {
+  font-size: 22px;
+  margin-bottom: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+.tredpro {
+  position: relative;
+}
+.trproimg {
+  position: relative;
+}
+.trproimg a {
+  padding-top: 100%;
+  min-height: 100%;
+  display: block;
+}
+.prolable span {
+  position: absolute;
+  top: 5px;
+  font-size: 13px;
+  color: #fff;
+  padding: 2px 10px 2px 15px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 10% 50%);
+}
+.ptext {
+  left: 5px;
+  background-color: #f5ab1e;
+}
+.pdiscount {
+  right: 5px;
+  background-color: #e30514;
+}
+.caption {
+  padding-top: 15px;
+}
+.caption h3 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.proprice {
+  margin-top: 10px;
+}
+.newprice {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 5px;
+  line-height: 1;
+}
+.oldprice {
+  color: #999;
+  font-size: 13px;
+  line-height: 1;
+}
+.rating {
+  margin-top: 5px;
+}
+.rating svg {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  color: #ffb503;
+}
+.rating .evenodd {
+  color: #ccc;
+}
+.additionalimage {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.productsitems:hover .additionalimage {
+  opacity: 1;
+  visibility: visible;
+}
+.rt {
+  background: #e67a00;
+  color: #fff;
+  padding: 2px 5px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 6px;
+}
+.count_text {
+  font-weight: 600;
+}

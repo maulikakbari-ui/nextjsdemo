@@ -1,0 +1,42 @@
+.homeservice {
+  padding-bottom: 80px;
+}
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px dashed #dedede;
+}
+.sbox {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px dashed #dedede;
+}
+.servicebox {
+  width: 25%;
+}
+.sbox svg {
+  font-size: 38px;
+  margin-right: 15px;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.sbox:hover svg {
+  color: #f5ab1e;
+  transform: rotateY(180deg);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.servicecontent span {
+  color: #000;
+  font-size: 17px;
+  font-weight: 500;
+}
+.servicecontent p {
+  color: #999;
+  margin-top: 2px;
+}
