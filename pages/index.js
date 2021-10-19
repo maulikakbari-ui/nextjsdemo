@@ -1,4 +1,4 @@
-import Slider from "../components/home/banner/Slider";
+//import Slider from "../components/Home/Banner/Slider";
 import CategorySlider from "../components/Home/Category/Category";
 import GridBanner from "../components/home/GridBanner/GridBanner";
 import HomeService from "../components/home/HomeService/HomeService";
@@ -9,7 +9,7 @@ import RecentNews from "../components/Home/RecentNews/RecentNews";
 function HomePage() {
   return (
     <>
-      <Slider />
+      {/* <Slider /> */}
       <GridBanner />
       <HomeService />
       <CategorySlider />
