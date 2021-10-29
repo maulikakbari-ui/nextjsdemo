@@ -111,3 +111,18 @@ ol {
 .f-link-ul.collapse:not(.show) {
   display: block;
 }
+.all_filter .all-option {
+  display: block;
+}
+.all_filter .all-price {
+  display: block;
+}
+.all_filter .all-size {
+  display: block;
+}
+.all_filter .all-tag {
+  display: block;
+}
+.all_filter .all-vendor {
+  display: block;
+}

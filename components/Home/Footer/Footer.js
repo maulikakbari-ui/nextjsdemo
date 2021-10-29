@@ -29,16 +29,20 @@ function Footer() {
                   name="email"
                   placeholder="Enter Your Email Address"
                 />
-                <a href="#" className="btn btn-style1">
-                  <i className="ion-paper-airplane"></i>
-                </a>
+                <Link href="#">
+                  <a className="btn btn-style1">
+                    <i className="ion-paper-airplane"></i>
+                  </a>
+                </Link>
               </form>
             </div>
             <div className={styles.footerMainin}>
               <div className={styles.flogo}>
                 <ul className={styles.footerul}>
                   <li className={styles.footerlogo}>
-                    <a href="#">freshbox</a>
+                    <Link href="/">
+                      <a>freshbox</a>
+                    </Link>
                   </li>
                   <li className={styles.footercontact}>
                     <ul className={styles.fulliul}>
@@ -46,8 +50,12 @@ function Footer() {
                         <MdCall />
                       </li>
                       <li className={styles.footerinfo}>
-                        <a href="tel:1-800-222-000">Phone: 1-800-222-000</a>
-                        <a href="mailto:demo@demo.com">Email: demo@demo.com</a>
+                        <Link href="tel:1-800-222-000">
+                          <a>Phone: 1-800-222-000</a>
+                        </Link>
+                        <Link href="mailto:demo@demo.com">
+                          <a>Email: demo@demo.com</a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
@@ -70,131 +78,161 @@ function Footer() {
                 <div className={styles.footerlink} id="footer-accordian">
                   <div className={styles.flink}>
                     <h2 className="h-footer">Top categories</h2>
-                    <a
-                      href="#t-cate"
-                      data-bs-toggle="collapse"
-                      className={styles.hfooter}
-                    >
-                      <span>Top categories</span>
-                      <i className="fa fa-angle-down"></i>
-                    </a>
+                    <Link href="#t-cate">
+                      <a data-bs-toggle="collapse" className={styles.hfooter}>
+                        <span>Top categories</span>
+                        <i className="fa fa-angle-down"></i>
+                      </a>
+                    </Link>
                     <ul
                       className="f-link-ul collapse"
                       id="t-cate"
                       data-bs-parent="#footer-accordian"
                     >
                       <li className="f-link-ul-li">
-                        <a href="product-style-5.html">Fruits</a>
+                        <Link href="/">
+                          <a>Fruits</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="product-style-5.html">Fast foods</a>
+                        <Link href="/">
+                          <a>Fast foods</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="product-style-5.html">Vegetable</a>
+                        <Link href="/">
+                          <a>Vegetable</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="product-style-5.html">Salads</a>
+                        <Link href="/">
+                          <a>Salads</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="product-style-5.html">Bestseller</a>
+                        <Link href="/">
+                          <a>Bestseller</a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <div className={styles.flink}>
                     <h2 className="hfooter">Services</h2>
-                    <a
-                      href="#services"
-                      data-bs-toggle="collapse"
-                      className={styles.hfooter}
-                    >
-                      <span>Services</span>
-                      <i className="fa fa-angle-down"></i>
-                    </a>
+                    <Link href="#services">
+                      <a data-bs-toggle="collapse" className={styles.hfooter}>
+                        <span>Services</span>
+                        <i className="fa fa-angle-down"></i>
+                      </a>
+                    </Link>
                     <ul
                       className="f-link-ul collapse"
                       id="services"
                       data-bs-parent="#footer-accordian"
                     >
                       <li className="f-link-ul-li">
-                        <a href="about-us.html">About vegist</a>
+                        <Link href="/">
+                          <a>About vegist</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="faq's.html">Faqs</a>
+                        <Link href="/">
+                          <a>Faqs</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="contact.html">Contact us</a>
+                        <Link href="/">
+                          <a>Contact us</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="blog-style-5-3-grid.html">News</a>
+                        <Link href="/">
+                          <a>News</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="sitemap.html">Sitemap</a>
+                        <Link href="/">
+                          <a>Sitemap</a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <div className={styles.flink}>
                     <h2 className="h-footer">Privacy &amp; terms</h2>
-                    <a
-                      href="#privacy"
-                      data-bs-toggle="collapse"
-                      className={styles.hfooter}
-                    >
-                      <span>Privacy &amp; terms</span>
-                      <i className="fa fa-angle-down"></i>
-                    </a>
+                    <Link href="#privacy">
+                      <a data-bs-toggle="collapse" className={styles.hfooter}>
+                        <span>Privacy &amp; terms</span>
+                        <i className="fa fa-angle-down"></i>
+                      </a>
+                    </Link>
                     <ul
                       className="f-link-ul collapse"
                       id="privacy"
                       data-bs-parent="#footer-accordian"
                     >
                       <li className="f-link-ul-li">
-                        <a href="payment-policy.html">Payment policy</a>
+                        <Link href="/">
+                          <a>Payment policy</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="privacy-policy.html">Privacy policy</a>
+                        <Link href="/">
+                          <a>Privacy policy</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="return-policy.html">Return policy</a>
+                        <Link href="/">
+                          <a>Return policy</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="shipping-policy.html">Shipping policy</a>
+                        <Link href="/">
+                          <a>Shipping policy</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="terms-conditions.html">
-                          Terms &amp; conditions
-                        </a>
+                        <Link href="/">
+                          <a>Terms &amp; conditions</a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <div className={styles.flink}>
                     <h2 className="h-footer">My account</h2>
-                    <a
-                      href="#services1"
-                      data-bs-toggle="collapse"
-                      className={styles.hfooter}
-                    >
-                      <span>My account</span>
-                      <i className="fa fa-angle-down"></i>
-                    </a>
+                    <Link href="#services1">
+                      <a data-bs-toggle="collapse" className={styles.hfooter}>
+                        <span>My account</span>
+                        <i className="fa fa-angle-down"></i>
+                      </a>
+                    </Link>
                     <ul
                       className="f-link-ul collapse"
                       id="services1"
                       data-bs-parent="#footer-accordian"
                     >
                       <li className="f-link-ul-li">
-                        <a href="account.html">My account</a>
+                        <Link href="/">
+                          <a>My account</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="cart-2.html">My cart</a>
+                        <Link href="/">
+                          <a>My cart</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="tracking.html">Order history</a>
+                        <Link href="/">
+                          <a>Order history</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="wishlist.html">My wishlist</a>
+                        <Link href="/">
+                          <a>My wishlist</a>
+                        </Link>
                       </li>
                       <li className="f-link-ul-li">
-                        <a href="addresses.html">My address</a>
+                        <Link href="/">
+                          <a>My address</a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

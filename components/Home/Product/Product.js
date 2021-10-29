@@ -8,6 +8,7 @@ import Image from "next/image";
 import styles from "../Product/Product.module.css";
 //import { BsStar, BsStarFill } from "react-icons/bs";
 import axios from "axios";
+import { useRouter } from "next/router";
 
 function ProductSlider() {
   const [product, setProduct] = useState([]);
@@ -27,6 +28,8 @@ function ProductSlider() {
     const newPath = imagePath.replace(str, "");
     return newPath;
   }
+
+  const router = useRouter();
 
   return (
     <>
@@ -70,7 +73,7 @@ function ProductSlider() {
                         <div className={styles.productsitems}>
                           <div className={styles.tredpro}>
                             <div className={styles.trproimg}>
-                              <Link href="#">
+                              <Link href={`/products/${item.id}`}>
                                 <a>
                                   <Image
                                     src={removePath(item.image)}
@@ -119,6 +122,11 @@ function ProductSlider() {
                     );
                   })}
               </Swiper>
+              <div className="text-center">
+                <Link href="/products">
+                  <a> View all </a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
