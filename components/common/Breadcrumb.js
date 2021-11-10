@@ -13,8 +13,13 @@ const Breadcrumb = () => {
                 <a>Home</a>
               </Link>
             </li>
+            <li className="breadcrumb-item" aria-current="page">
+              <Link href="/">
+                <a> All Product</a>
+              </Link>
+            </li>
             <li className="breadcrumb-item active" aria-current="page">
-              All Product
+              Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
             </li>
           </ol>
         </nav>

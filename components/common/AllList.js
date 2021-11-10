@@ -8,7 +8,12 @@ import { BsListUl, BsGrid, BsGrid3X3Gap, BsStarFill } from "react-icons/bs";
 import axios from "axios";
 import styles from "../common/List.module.css";
 
+import { useSelector } from "react-redux";
+
 const AllList = () => {
+  const products = useSelector((state) => state);
+  console.log(products);
+
   const [productList, setProductList] = useState([]);
   const [showA, setShowA] = useState("3");
   const [gList, setGList] = useState(styles.grid_items);

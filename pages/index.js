@@ -10,11 +10,11 @@ function HomePage() {
   return (
     <>
       <Slider />
+      <ProductSlider />
       <GridBanner />
       <HomeService />
       <CategorySlider />
       <DealDay />
-      <ProductSlider />
       <RecentNews />
     </>
   );

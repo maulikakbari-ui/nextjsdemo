@@ -124,7 +124,7 @@ function ProductSlider() {
               </Swiper>
               <div className="text-center">
                 <Link href="/products">
-                  <a> View all </a>
+                  <a className="all_button"> View all </a>
                 </Link>
               </div>
             </div>

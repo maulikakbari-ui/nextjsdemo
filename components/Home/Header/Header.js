@@ -12,9 +12,9 @@ function Header() {
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container">
               <div className={styles.headerelement}>
-                <a className="navbar-brand" href="#">
-                  freshbox
-                </a>
+                <Link href="/">
+                  <a className="navbar-brand">freshbox</a>
+                </Link>
               </div>
 
               <button

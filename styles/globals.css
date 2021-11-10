@@ -41,6 +41,7 @@ ol {
 }
 .header-main-area .navbar {
   padding: 25px 0px;
+  background: #f5ab1e !important;
 }
 .swiper-button-next::after,
 .swiper-button-prev::after {
@@ -125,4 +126,19 @@ ol {
 }
 .all_filter .all-vendor {
   display: block;
+}
+.all_button {
+  background: #222;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  margin-top: 15px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.all_button:hover {
+  background: #f5ab1e;
+  color: #222;
 }

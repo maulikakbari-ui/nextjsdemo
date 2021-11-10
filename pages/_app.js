@@ -4,10 +4,11 @@ import Head from "next/head";
 
 import Layout from "../components/Layout";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, title = "Welcome to freshbox" }) {
   return (
     <>
       <Head>
+        <title>{title}</title>
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"

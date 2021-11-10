@@ -11,19 +11,20 @@ const ProductInner = () => {
   const router = useRouter();
   useEffect(() => {
     getProductInList();
-  }, [router.query]);
+  }, [getProductInList, router.query]);
   //console.log(router, "tes");
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   async function getProductInList() {
     try {
       const response = await axios.get(
         `https://fakestoreapi.com/products/${router.query.productId}`
       );
-      console.log(response.data, "response data");
+      //console.log(response.data, "response data");
       setProductInList(response.data);
     } catch {}
   }
 
-  //console.log(productInList);
+  console.log(productInList);
 
   function removePath(imagePath) {
     const str = "https://fakestoreapi.com/";
@@ -33,6 +34,7 @@ const ProductInner = () => {
     }
     return null;
   }
+
   return (
     <>
       <Breadcrumb />
@@ -73,4 +75,5 @@ const ProductInner = () => {
     </>
   );
 };
+
 export default ProductInner;
