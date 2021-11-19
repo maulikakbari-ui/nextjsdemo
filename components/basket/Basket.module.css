@@ -89,9 +89,10 @@
   text-overflow: ellipsis;
 }
 .cart_title h6 a {
-  font-size: 14px;
+  font-size: 14px !important;
   width: 100%;
   display: inline-block;
+  line-height: inherit;
 }
 .subtotal_title_area {
   position: absolute;

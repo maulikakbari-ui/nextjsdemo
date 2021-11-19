@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
@@ -12,7 +13,7 @@ const ProductInner = () => {
   const router = useRouter();
   useEffect(() => {
     getProductInList();
-  }, [getProductInList, router.query]);
+  }, [router.query]);
   //console.log(router, "tes");
   // eslint-disable-next-line react-hooks/exhaustive-deps
   async function getProductInList() {
@@ -39,13 +40,13 @@ const ProductInner = () => {
   const addToCart = () => {
     //const cartData = localStorage.getItem("cart");
     const cartData = JSON.parse(localStorage.getItem("cart"));
-    console.log(item, "1");
+    console.log(productInList, "1");
     if (cartData) {
-      cartData.push(item);
+      cartData.push(productInList);
       localStorage.setItem("cart", JSON.stringify(cartData));
     } else {
       let newCart = [];
-      newCart.push(item);
+      newCart.push(productInList);
       localStorage.setItem("cart", JSON.stringify(newCart));
     }
   };
