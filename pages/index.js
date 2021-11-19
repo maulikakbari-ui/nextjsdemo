@@ -6,11 +6,12 @@ import DealDay from "../components/Home/DealDay/DealDay";
 import ProductSlider from "../components/Home/Product/Product";
 import RecentNews from "../components/Home/RecentNews/RecentNews";
 
-function HomePage() {
+function HomePage(props) {
+  const { products } = props;
   return (
     <>
       <Slider />
-      <ProductSlider />
+      <ProductSlider products={products} />
       <GridBanner />
       <HomeService />
       <CategorySlider />
@@ -21,3 +22,19 @@ function HomePage() {
 }
 
 export default HomePage;
+
+export async function getStaticProps() {
+  // Call an external API endpoint to get products.
+  // You can use any data fetching library
+  const res = await fetch("https://fakestoreapi.com/products");
+  const products = await res.json();
+  console.log(products, "test");
+
+  // By returning { props: { products } }, the products component
+  // will receive `products` as a prop at build time
+  return {
+    props: {
+      products,
+    },
+  };
+}

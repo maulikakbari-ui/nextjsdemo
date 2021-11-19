@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import axios from "axios";
 import Breadcrumb from "../../components/common/Breadcrumb";
+import { twoDecimals } from "../../utils/format";
 
 import styles from "../products/Products.module.css";
 
@@ -35,6 +36,20 @@ const ProductInner = () => {
     return null;
   }
 
+  const addToCart = () => {
+    //const cartData = localStorage.getItem("cart");
+    const cartData = JSON.parse(localStorage.getItem("cart"));
+    console.log(item, "1");
+    if (cartData) {
+      cartData.push(item);
+      localStorage.setItem("cart", JSON.stringify(cartData));
+    } else {
+      let newCart = [];
+      newCart.push(item);
+      localStorage.setItem("cart", JSON.stringify(newCart));
+    }
+  };
+
   return (
     <>
       <Breadcrumb />
@@ -64,9 +79,11 @@ const ProductInner = () => {
                   </span>
                   <span>{productInList?.rating?.count}</span>
                 </div>
-                <strong>$ {productInList?.price}</strong>
+                <strong>${twoDecimals(productInList?.price)}</strong>
                 <p>{productInList?.description}</p>
-                <button>Add cart </button>
+                <button className={styles.addcart} onClick={() => addToCart()}>
+                  Add to Cart
+                </button>
               </div>
             </div>
           </div>

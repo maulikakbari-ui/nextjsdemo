@@ -274,3 +274,20 @@
   background-color: #f5ab1e;
   text-transform: capitalize;
 }
+.addcart {
+  position: relative;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 30px;
+  background-color: #f5ab1e;
+  font-weight: 600;
+  border: 2px solid #f5ab1e;
+  border-radius: 3px;
+  border-color: #f5ab1e;
+  margin-top: 10px;
+  display: inline-block;
+}
+.addcart:hover {
+  background-color: transparent;
+  color: #f5ab1e;
+}

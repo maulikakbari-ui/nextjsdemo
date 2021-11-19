@@ -17,6 +17,8 @@
   display: block;
   font-size: 30px;
   line-height: 0;
+  cursor: pointer;
+  position: relative;
 }
 .navmain {
   margin-left: auto;
@@ -32,4 +34,39 @@
 }
 .dropdown-menu li a {
   font-size: 15px;
+}
+.right_cart {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_toggler {
+  padding: 0.25rem 0.4rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+  color: rgba(0, 0, 0, 0.55);
+  border-color: rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .navbar_toggler {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .navbar_toggler {
+    display: block;
+  }
+  .navmain ul li a {
+    padding: 0.5rem 1rem !important;
+  }
+  .shopelement li {
+    margin-left: 10px;
+  }
 }

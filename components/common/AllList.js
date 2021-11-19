@@ -7,6 +7,7 @@ import Link from "next/link";
 import { BsListUl, BsGrid, BsGrid3X3Gap, BsStarFill } from "react-icons/bs";
 import axios from "axios";
 import styles from "../common/List.module.css";
+import { twoDecimals } from "../../utils/format";
 
 import { useSelector } from "react-redux";
 
@@ -34,6 +35,34 @@ const AllList = () => {
     const newPath = imagePath.replace(str, "");
     return newPath;
   }
+
+  const addToCart = (items) => {
+    //const cartData = localStorage.getItem("cart");
+    const cartData = JSON.parse(localStorage.getItem("cart"));
+    console.log(items, "1");
+    if (cartData) {
+      cartData.push(items);
+      localStorage.setItem("cart", JSON.stringify(cartData));
+    } else {
+      let newCart = [];
+      newCart.push(items);
+      localStorage.setItem("cart", JSON.stringify(newCart));
+    }
+
+    // const localStorageData = localStorage.setItem("cart", JSON.stringify(cart));
+    // let newCart = [...cart];
+    // let itemInCart = newCart.find((item) => item.name === item.name);
+    // if (itemInCart) {
+    //   itemInCart.quantity++;
+    // } else {
+    //   itemInCart = {
+    //     ...item,
+    //     quantity: 1,
+    //   };
+    //   newCart.push(itemInCart);
+    // }
+    // setCart(newCart);
+  };
 
   return (
     productList &&
@@ -486,7 +515,7 @@ const AllList = () => {
                                     <span>{items.rating.count}</span>
                                   </div>
                                   <div className={styles.pro_pricein}>
-                                    <span> $ {items.price}</span>
+                                    <span> $ {twoDecimals(items.price)}</span>
                                     <span className={styles.old_price}>
                                       <del>$.179.00 USD</del>
                                     </span>
@@ -495,6 +524,12 @@ const AllList = () => {
                               </div>
                             </a>
                           </Link>
+                          <button
+                            className={styles.addcart}
+                            onClick={() => addToCart(items)}
+                          >
+                            Add to Cart
+                          </button>
                         </li>
                       );
                     })}

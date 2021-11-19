@@ -41,13 +41,21 @@
   font-size: 16px;
   margin-top: 10px;
 }
-.product_info button {
-  background: #e67a00;
+
+.addcart {
+  position: relative;
   color: #fff;
-  padding: 15px 30px;
-  border-radius: 8px;
-  border: none;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 30px;
+  background-color: #f5ab1e;
+  font-weight: 600;
+  border: 2px solid #f5ab1e;
+  border-radius: 3px;
+  border-color: #f5ab1e;
   margin-top: 20px;
+  display: inline-block;
+}
+.addcart:hover {
+  background-color: transparent;
+  color: #f5ab1e;
 }
