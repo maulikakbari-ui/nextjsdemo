@@ -110,3 +110,30 @@
 .flink ul li:last-child {
   margin-top: 0px;
 }
+
+@media (max-width: 767px) {
+  .footerMainin {
+    display: block;
+  }
+  .flogo {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footerbottom {
+    width: 100%;
+  }
+  .flink {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .flink h2 {
+    display: none;
+  }
+  .hfooter {
+    display: block;
+    color: #f5ab1e;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+  }
+}

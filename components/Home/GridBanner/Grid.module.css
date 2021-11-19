@@ -88,3 +88,16 @@
   font-weight: 700;
   display: block;
 }
+@media (max-width: 767px) {
+  .organicfoodfreshbanner {
+    display: block;
+  }
+  .offerbanner {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  .service {
+    overflow-x: scroll;
+  }
+}

@@ -92,7 +92,7 @@
   font-size: 14px !important;
   width: 100%;
   display: inline-block;
-  line-height: inherit;
+  line-height: inherit !important;
 }
 .subtotal_title_area {
   position: absolute;
@@ -101,7 +101,7 @@
   background-color: #fff;
 }
 .subtotal_title_area li {
-  display: block;
+  display: block !important;
   margin-left: 0px;
   padding: 10px 15px;
   border-top: 1px solid #eee;
