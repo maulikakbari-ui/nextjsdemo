@@ -1,0 +1,130 @@
+.cart_page {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.cart_area {
+  padding-bottom: 20px;
+}
+.cart_item {
+  padding: 13px 0px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart_item span.cart_head {
+  font-size: 16px;
+  font-weight: 700;
+}
+.cart_item span.c_items {
+  border-bottom: 1px solid #000;
+  margin-bottom: 3px;
+}
+.cart_all_pro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #eee;
+}
+.cart_pro {
+  width: 60%;
+  margin-top: 20px;
+  display: flex;
+}
+.cart_pro_image {
+  margin-right: 15px;
+  width: 150px;
+  position: relative;
+}
+.pro_details {
+  width: 75%;
+}
+.pro_details h4 {
+  font-size: 16px;
+  line-height: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+.pro_size {
+  margin-top: 10px;
+  display: block;
+  line-height: 1;
+}
+.pro_size span.size {
+  font-weight: 600;
+}
+.pro_shop {
+  margin-top: 10px;
+  display: block;
+  line-height: 1;
+}
+.cart_pro_price {
+  margin-top: 10px;
+  display: block;
+  line-height: 1;
+}
+.bx_center {
+  display: inline-block;
+}
+.qty_item {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plus_minus {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.plus_minus span {
+  display: flex;
+  border: 1px solid #eee;
+}
+a.add_btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pro_remove {
+  color: #5fa800;
+  margin-top: 15px;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form_input {
+  width: 50px;
+  height: 30px;
+  padding: 0px;
+  text-align: center;
+  border: none;
+}
+.all_pro_price span {
+  font-weight: 600;
+}
+.total_bt {
+  padding: 13px 0px;
+  border-bottom: 1px solid #eee;
+  display: -moz-box;
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+}
+.total_bt span.cart_head {
+  font-weight: 600;
+}
+.total_bt span.cart_total {
+  font-weight: 600;
+}

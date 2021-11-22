@@ -77,9 +77,14 @@ function Header() {
                   <ul className={styles.shopelement}>
                     <li className="side-wrap">
                       <div className="search-rap">
-                        <a href="#">
-                          <HiSearch />
-                        </a>
+                        <Link href="#">
+                          <a
+                            data-bs-toggle="modal"
+                            data-bs-target="#search-modal"
+                          >
+                            <HiSearch />
+                          </a>
+                        </Link>
                       </div>
                     </li>
                     <li className="side-wrap">

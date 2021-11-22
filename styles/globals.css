@@ -162,6 +162,94 @@ ol {
   opacity: 1;
   visibility: visible;
 }
+.search-model .modal.fade {
+  padding-right: 0px !important;
+}
+.search-model .modal.fade .modal-dialog {
+  margin: 0px;
+  max-width: 100%;
+}
+.search-model .modal.fade .modal-dialog .modal-content {
+  background-color: #fff;
+  border: none;
+  border-radius: 0px;
+}
+.search-model .modal.fade .modal-dialog .modal-content .modal-body {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+.search-model
+  .modal.fade
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .search-content {
+  display: flex;
+  align-items: center;
+}
+.search-model
+  .modal.fade
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .search-content
+  .search-engine {
+  width: 100%;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.search-model
+  .modal.fade
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .search-content
+  .search-engine
+  input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #c7c7c7;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+.search-model
+  .modal.fade
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .search-content
+  .search-engine
+  button.search-btn {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 40px;
+  background-color: #222;
+  border: none;
+  border-radius: 3px;
+  line-height: 0;
+}
+.search-model
+  .modal.fade
+  .modal-dialog
+  .modal-content
+  .modal-body
+  .search-content
+  button.close {
+  float: none;
+  display: block;
+  background-color: transparent;
+  color: #000;
+  font-size: 18px;
+  margin-left: 10px;
+  opacity: 1;
+  line-height: 0;
+  border: none;
+}
 
 @media (max-width: 767px) {
   .navbar-collapse {

@@ -3,16 +3,28 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { AiOutlineDelete } from "react-icons/ai";
 import styles from "../basket/Basket.module.css";
-
+import { twoDecimals } from "../../utils/format";
 import Image from "next/image";
+import Link from "next/link";
+import _map from "lodash/map";
+import _sum from "lodash/sum";
 
 const Basket = () => {
   const [showBasketModel, setShowBasketModel] = useState(false);
   const [cartData, setcartData] = useState(0);
+  const [cartTotal, setcartTotal] = useState(0);
 
   useEffect(() => {
     setcartData(JSON.parse(localStorage.getItem("cart")));
-  }, []);
+    const calculatePrice = () => {
+      console.log(cartData, "1price");
+      const priceArr = _map(cartData, "price");
+      const TotalPrice = _sum(priceArr, "TotalPrice");
+      setcartTotal(TotalPrice);
+      console.log(priceArr, "price");
+    };
+    calculatePrice();
+  }, [cartData]);
   //console.log(cartData, "test1");
 
   const delItem = (i) => {
@@ -21,6 +33,16 @@ const Basket = () => {
     localStorage.removeItem("cart");
     setcartData(cartData.filter((item) => item !== selectedItem));
   };
+
+  //let _total = 0;
+
+  // const calculatePrice = () => {
+  //   console.log(cartData, "1price");
+  //   const priceArr = _map(cartData, "price");
+  //   const TotalPrice = _sum(priceArr, "TotalPrice");
+  //   setcartTotal(TotalPrice);
+  //   console.log(priceArr, "price");
+  // };
 
   function removePath(imagePath) {
     const str = "https://fakestoreapi.com/";
@@ -102,14 +124,19 @@ const Basket = () => {
                 <li className="subtotal-info">
                   <div className={styles.subtotal_titles}>
                     <h6>Sub total:</h6>
-                    <span className="subtotal-price">$750.00 USD</span>
+                    <span className="subtotal-price">
+                      ${twoDecimals(cartTotal)}{" "}
+                    </span>
                   </div>
                 </li>
                 <li className="mini-cart-btns">
                   <div className={styles.cart_btns}>
-                    <a href="#" className={styles.btn_style1}>
-                      View cart
-                    </a>
+                    <Link
+                      href="/cart"
+                      onClick={() => setShowBasketModel(false)}
+                    >
+                      <a className={styles.btn_style1}>View cart</a>
+                    </Link>
                     <a href="#" className={styles.btn_style1}>
                       Checkout
                     </a>
