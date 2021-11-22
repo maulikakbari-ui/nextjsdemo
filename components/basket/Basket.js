@@ -16,15 +16,8 @@ const Basket = () => {
 
   useEffect(() => {
     setcartData(JSON.parse(localStorage.getItem("cart")));
-    const calculatePrice = () => {
-      console.log(cartData, "1price");
-      const priceArr = _map(cartData, "price");
-      const TotalPrice = _sum(priceArr, "TotalPrice");
-      setcartTotal(TotalPrice);
-      console.log(priceArr, "price");
-    };
     calculatePrice();
-  }, [cartData]);
+  }, []);
   //console.log(cartData, "test1");
 
   const delItem = (i) => {
@@ -36,13 +29,13 @@ const Basket = () => {
 
   //let _total = 0;
 
-  // const calculatePrice = () => {
-  //   console.log(cartData, "1price");
-  //   const priceArr = _map(cartData, "price");
-  //   const TotalPrice = _sum(priceArr, "TotalPrice");
-  //   setcartTotal(TotalPrice);
-  //   console.log(priceArr, "price");
-  // };
+  const calculatePrice = () => {
+    console.log(cartData, "1price");
+    const priceArr = _map(cartData, "price");
+    const TotalPrice = _sum(priceArr, "TotalPrice");
+    setcartTotal(TotalPrice);
+    console.log(priceArr, "price");
+  };
 
   function removePath(imagePath) {
     const str = "https://fakestoreapi.com/";
