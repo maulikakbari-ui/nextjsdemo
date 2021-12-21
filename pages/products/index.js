@@ -6,7 +6,7 @@ import Breadcrumb from "../../components/common/Breadcrumb";
 function ProductList() {
   return (
     <Fragment>
-      <Breadcrumb />
+      <Breadcrumb title="Home" type="All Products" />
       <AllList />
     </Fragment>
   );

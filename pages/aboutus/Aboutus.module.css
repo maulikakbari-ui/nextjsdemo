@@ -1,0 +1,16 @@
+.about_content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.about_title {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.about_title p {
+  margin-bottom: 30px;
+}
+.about_details p {
+  margin-bottom: 30px;
+  text-align: center;
+}

@@ -170,6 +170,10 @@
   height: 34px;
   text-align: center;
 }
+.grid_list li span {
+  background-color: #f5ab1e;
+  border-radius: 3px;
+}
 .grid_list_selector li label {
   font-weight: 600;
   margin-right: 10px;
@@ -221,8 +225,8 @@
   padding-top: 15px;
 }
 .caption h3 {
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 600;
 }
 .caption h3 a {
   display: block;
@@ -230,6 +234,9 @@
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.caption h3 a:hover {
+  color: #e67a00;
 }
 .star_in {
   background: #e67a00;
@@ -290,4 +297,34 @@
 .addcart:hover {
   background-color: transparent;
   color: #f5ab1e;
+}
+.pagination_list {
+  margin-top: 30px;
+}
+.pagination_list ul {
+  display: block;
+  text-align: center;
+}
+.pagination_list ul li {
+  display: inline-block;
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+}
+.pagination_list ul li button {
+  border: none;
+  width: 100%;
+}
+.pagination_list ul li button::after {
+  display: block;
+  font-size: 20px;
+}
+.pagination_list ul li a {
+  font-size: 16px;
+  display: block;
+}
+.pagination_list ul li.rc-pagination-item-active {
+  border: 1px solid #666666;
 }

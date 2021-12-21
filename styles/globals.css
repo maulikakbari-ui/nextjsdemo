@@ -250,6 +250,21 @@ ol {
   line-height: 0;
   border: none;
 }
+input,
+select,
+textarea {
+  padding: 10px 15px;
+  border: 1px solid #e2e2e2;
+  border-radius: 0;
+}
+.rc-pagination-prev button::after {
+  content: "<";
+  display: block;
+}
+.rc-pagination-next button::after {
+  content: ">";
+  display: block;
+}
 
 @media (max-width: 767px) {
   .navbar-collapse {

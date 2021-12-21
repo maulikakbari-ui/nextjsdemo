@@ -53,7 +53,11 @@ const ProductInner = () => {
 
   return (
     <>
-      <Breadcrumb />
+      <Breadcrumb
+        title="Home"
+        type="All Products"
+        subtype={productInList?.title}
+      />
 
       <section className={styles.product_details}>
         <div className="container">

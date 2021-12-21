@@ -1,9 +1,17 @@
-import { createStore } from "redux";
-import rootReducer from "./reducers/index";
+// import { createStore } from "redux";
+// import rootReducer from "./reducers/index";
 
-const store = createStore(
-  rootReducer
-  //window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+// const { composeWithDevTools } = require("redux-devtools-extension");
 
-export default store;
+// const store = createStore(rootReducer);
+
+// export default store;
+
+import { configureStore } from "@reduxjs/toolkit";
+import counterReducer from "../redux/counter/counterSlice";
+
+export default configureStore({
+  reducer: {
+    counter: counterReducer,
+  },
+});

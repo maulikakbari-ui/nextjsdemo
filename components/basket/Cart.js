@@ -8,9 +8,15 @@ import _map from "lodash/map";
 import _sum from "lodash/sum";
 import { twoDecimals } from "../../utils/format";
 
+import { useSelector, useDispatch } from "react-redux";
+import { decrement, increment } from "../../redux/counter/counterSlice";
+
 const cartList = () => {
   const [cartData, setcartData] = useState(0);
   const [cartTotal, setcartTotal] = useState(0);
+
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     setcartData(JSON.parse(localStorage.getItem("cart")));
@@ -73,7 +79,7 @@ const cartList = () => {
                           </div>
                           <div className={styles.pro_details}>
                             <h4>
-                              <Link href="/">
+                              <Link href={`/products/${cartItem.id}`}>
                                 <a>{cartItem.title}</a>
                               </Link>
                             </h4>
@@ -90,21 +96,21 @@ const cartList = () => {
                           <div className={styles.bx_center}>
                             <div className={styles.plus_minus}>
                               <span>
-                                <Link href="javascript:void(0)">
-                                  <a className={styles.add_btn}>-</a>
-                                </Link>
-                                <input
-                                  className={styles.form_input}
-                                  type="text"
-                                  name="name"
-                                  value="1"
-                                />
-                                <Link href="javascript:void(0)">
-                                  <a className={styles.add_btn}>+</a>
-                                </Link>
+                                <button onClick={() => dispatch(decrement())}>
+                                  -
+                                </button>
+                                <div className={styles.cont_a}>{count}</div>
+                                <button onClick={() => dispatch(increment())}>
+                                  +
+                                </button>
                               </span>
                             </div>
-                            <span className={styles.pro_remove}>Remove</span>
+                            <span
+                              className={styles.pro_remove}
+                              onClick={() => delItem(i)}
+                            >
+                              Remove
+                            </span>
                           </div>
                         </div>
                         <div className={styles.all_pro_price}>
@@ -114,7 +120,7 @@ const cartList = () => {
                     );
                   })}
                 <div className={styles.total_bt}>
-                  <span className={styles.cart_head}>Total</span>
+                  <span className={styles.cart_head}>SubTotal</span>
                   <span className={styles.cart_total}>
                     ${twoDecimals(cartTotal)}
                   </span>

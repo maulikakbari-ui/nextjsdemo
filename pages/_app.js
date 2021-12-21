@@ -1,10 +1,15 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import "../styles/globals.css";
 import Head from "next/head";
-
+import { SessionProvider } from "next-auth/react";
 import Layout from "../components/Layout";
 
-function MyApp({ Component, pageProps, title = "Welcome to freshbox" }) {
+function MyApp({
+  Component,
+  pageProps,
+  session,
+  title = "Welcome to freshbox",
+}) {
   return (
     <>
       <Head>
@@ -19,9 +24,12 @@ function MyApp({ Component, pageProps, title = "Welcome to freshbox" }) {
         />
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
       </Head>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+
+      <SessionProvider session={session}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </SessionProvider>
     </>
   );
 }

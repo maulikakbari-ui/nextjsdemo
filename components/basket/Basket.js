@@ -9,10 +9,16 @@ import Link from "next/link";
 import _map from "lodash/map";
 import _sum from "lodash/sum";
 
+import { useSelector, useDispatch } from "react-redux";
+import { decrement, increment } from "../../redux/counter/counterSlice";
+
 const Basket = () => {
   const [showBasketModel, setShowBasketModel] = useState(false);
   const [cartData, setcartData] = useState(0);
   const [cartTotal, setcartTotal] = useState(0);
+
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     setcartData(JSON.parse(localStorage.getItem("cart")));
@@ -92,7 +98,9 @@ const Basket = () => {
                         </div>
                         <div className={styles.cart_title}>
                           <h6>
-                            <a href="#">{cartItem.title}</a>
+                            <Link href={`/products/${cartItem.id}`}>
+                              <a>{cartItem.title}</a>
+                            </Link>
                           </h6>
                           <div className={styles.cart_pro_info}>
                             <div className="cart-qty-price">
@@ -100,6 +108,17 @@ const Basket = () => {
                               <span className="price-box">
                                 ${cartItem.price}
                               </span>
+                              <div className={styles.quantity_count}>
+                                <div className={styles.count_inq}>
+                                  <span onClick={() => dispatch(decrement())}>
+                                    -
+                                  </span>
+                                  <div className={styles.cont_a}>{count}</div>
+                                  <span onClick={() => dispatch(increment())}>
+                                    +
+                                  </span>
+                                </div>
+                              </div>
                             </div>
                             <div className={styles.delete_item_cart}>
                               <span onClick={() => delItem(i)}>

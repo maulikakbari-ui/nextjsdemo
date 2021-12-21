@@ -2,7 +2,9 @@ import React from "react";
 import styles from "../common/Breadcrumb.module.css";
 import Link from "next/link";
 
-const Breadcrumb = () => {
+export default function Breadcrumb(props) {
+  const { title, type, subtype } = props;
+
   return (
     <>
       <div className={styles.breadcrumb_main}>
@@ -10,22 +12,24 @@ const Breadcrumb = () => {
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
               <Link href="/">
-                <a>Home</a>
+                <a>{title}</a>
               </Link>
             </li>
             <li className="breadcrumb-item" aria-current="page">
-              <Link href="/">
-                <a> All Product</a>
+              <Link href="/products">
+                <a> {type}</a>
               </Link>
             </li>
-            <li className="breadcrumb-item active" aria-current="page">
-              Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
-            </li>
+            {subtype && (
+              <li className="breadcrumb-item active" aria-current="page">
+                {subtype}
+              </li>
+            )}
           </ol>
         </nav>
       </div>
     </>
   );
-};
+}
 
-export default Breadcrumb;
+//export default Breadcrumb;

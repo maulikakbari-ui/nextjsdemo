@@ -93,6 +93,9 @@
   width: 100%;
   display: inline-block;
   line-height: inherit !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .subtotal_title_area {
   position: absolute;
@@ -151,6 +154,32 @@
   align-items: center;
   justify-content: center;
   flex: 1 1;
+}
+.quantity_count {
+  display: inline-block;
+  width: 75px;
+  margin-left: 8px;
+}
+.count_inq {
+  display: flex;
+  align-items: center;
+}
+.count_inq span {
+  width: 30px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  background: #f5ab1e;
+  color: #fff;
+}
+.count_inq input {
+  width: 50%;
+  height: 20px;
+  text-align: center;
+  border: 1px solid #cccccc;
+}
+.cont_a {
+  padding: 2px 10px;
 }
 
 @media (max-width: 767px) {

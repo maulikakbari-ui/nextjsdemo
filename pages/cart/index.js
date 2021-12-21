@@ -6,7 +6,7 @@ import CartList from "../../components/basket/Cart";
 const Cart = () => {
   return (
     <>
-      <Breadcrumb />
+      <Breadcrumb title="Home" />
       <CartList />
     </>
   );

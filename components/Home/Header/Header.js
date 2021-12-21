@@ -4,7 +4,11 @@ import { FiHeart } from "react-icons/fi";
 import styles from "../Header/Nav.module.css";
 import Basket from "../../basket/Basket";
 
+import { useSession, signIn, signOut } from "next-auth/react";
+
 function Header() {
+  const { data: session } = useSession();
+
   return (
     <div>
       <header className="header-area">
@@ -60,13 +64,13 @@ function Header() {
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link href="#">
-                        <a className="nav-link">Pages</a>
+                      <Link href="/aboutus">
+                        <a className="nav-link">About Us</a>
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link href="#">
-                        <a className="nav-link">Blogs</a>
+                      <Link href="/contact">
+                        <a className="nav-link">Contact Us</a>
                       </Link>
                     </li>
                   </ul>
@@ -89,12 +93,31 @@ function Header() {
                     </li>
                     <li className="side-wrap">
                       <div className="search-rap">
-                        <a href="#">
-                          <FiHeart />
-                        </a>
+                        <Link href="/wishlist">
+                          <a>
+                            <FiHeart />
+                          </a>
+                        </Link>
                       </div>
                     </li>
                     <Basket />
+                    <li>
+                      {session ? (
+                        <button
+                          onClick={() => signOut()}
+                          className={styles.btn_log}
+                        >
+                          Log out
+                        </button>
+                      ) : (
+                        <button
+                          onClick={() => signIn()}
+                          className={styles.btn_log}
+                        >
+                          Sign in
+                        </button>
+                      )}
+                    </li>
                   </ul>
                 </div>
                 <button
